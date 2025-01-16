@@ -124,8 +124,7 @@ end
 
 run(function()
 	local Killaura = {Enabled = false}
-	local Slowmode = {Value = 2}
-	local Range = {Value = 15}
+	local Range = {Value = 22}
 	local Targets = {Walls = {Enabled = false}, Players = {Enabled = false}, NPCs = {Enabled = false}}
 
 	Killaura = vape.Categories.Blatant:CreateModule({
@@ -164,14 +163,6 @@ run(function()
 		Max = 15,
 		Default = 15
 	})
-
-	Slowmode = Killaura:CreateSlider({
-		Name = "Slowmode",
-		Function = function() end,
-		Min = 2, 
-		Max = 10,
-		Default = 2
-	})
 end)
 
 run(function()
@@ -199,9 +190,9 @@ run(function()
 	Slowmode = Nuker:CreateSlider({
 		Name = "Slowmode",
 		Function = function() end,
-		Min = 2,
+		Min = 1,
 		Max = 10,
-		Default = 2.5
+		Default = 1
 	})
 end)
 
